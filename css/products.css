@@ -1,0 +1,226 @@
+.cart{
+    width: 30px;
+    height: 30px;
+}
+
+#items{
+    width: 250px;
+    height: 180px;
+}
+
+.main .product-section{
+    height: 100vh;
+    background-image: url("../assets/home-bg.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: grid;
+    grid-template-rows: 100px 1fr;
+}
+
+.main .product-section h2{
+    font-size: 42px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main .product-section h2 span {
+    font-weight: 500;
+    margin-left: 10px;
+    color: var(--primary);
+}
+
+.main .product-section .product-list {
+    display: grid;
+    grid-template-columns: 1fr repeat(3, 260px) 1fr;
+    grid-auto-rows: 300px;
+    gap: 40px;
+}
+  
+.main .product-section .product-list .product:nth-child(1) {
+    grid-row: 1/2;
+    grid-column: 2/3;
+}
+.main .product-section .product-list .product:nth-child(2) {
+    grid-row: 1/2;
+    grid-column: 3/4;
+}
+.main .product-section .product-list .product:nth-child(3) {
+    grid-row: 1/2;
+    grid-column: 4/5;
+}
+.main .product-section .product-list .product:nth-child(4) {
+    grid-row: 2/3;
+    grid-column: 2/3;
+}
+.main .product-section .product-list .product:nth-child(5) {
+    grid-row: 2/3;
+    grid-column: 3/4;
+}
+.main .product-section .product-list .product:nth-child(6) {
+    grid-row: 2/3;
+    grid-column: 4/5;
+}
+.main .product-section .product-list .product {
+    border: 0.5px solid var(--primaryHover);
+    position: relative;
+    display: grid;
+    grid-template-rows: 1fr auto;
+    cursor: pointer;
+}
+
+/* .main .product-section .product-list .product .price-container {
+    margin: 0 14px;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    transition: all 200ms ease-in;
+} */
+
+/* .main .product-section .product-list .product .supply-container .image-container {
+    cursor: pointer;
+  } */
+
+.main .product-section .product-list .product .supply-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 200ms ease-in;
+}
+
+.main .product-section .product-list .product .supply-container p {
+    font-size: 25px;
+    font-weight: 300;
+    margin: 0;
+    margin-top: 10px;
+}
+
+.main .product-section .product-list .product .supply-container p span {
+    color: var(--primary);
+    font-weight: 300;
+}
+
+.main 
+    .product-section 
+    .product-list 
+    .product 
+    .supply-container 
+    .image-container {
+        margin-top: 10px;
+    }
+
+.main 
+    .product-section 
+    .product-list 
+    .product 
+    .price-container {
+        margin: 0 14px;
+        display: grid;
+        grid-template-columns: 1fr auto;
+        align-items: center;
+        transition: all 200ms ease-in;
+    }
+
+.main .product-section .product-list .product >  .price-container p {
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--primary);
+    }
+
+.main 
+    .product-section 
+    .product-list 
+    .product 
+    .price-container   
+    .image-container {
+        cursor: pointer;
+    }
+
+
+/* Hover  */
+/* .main .product-section .product-list .product:hover > .supply-container,
+.main .product-section .product-list .product:hover > .price-container {
+  opacity: 0; 
+ }
+
+.main .product-section .product-list .product:hover .hover-details {
+    transform: scale(1);
+} */
+
+/* End */
+.main .product-section .product-list .product .hover-details {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    transition: transform 200ms ease-in;
+    transform: scale(0);
+    z-index: 2;
+    display: grid;
+    grid-template-rows: 1fr auto;
+ }
+
+.main 
+    .product-section 
+    .product-list 
+    .product 
+    .hover-details 
+    .price-container {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+.main 
+    .product-section 
+    .product-list 
+    .product 
+    .hover-details 
+    .price-container 
+    p:nth-child(1) {
+        font-size: 25px;
+        font-weight: 300;
+        margin: 0;
+    }
+
+.main 
+    .product-section 
+    .product-list 
+    .product 
+    .hover-details 
+    .price-container 
+    p:nth-child(1) 
+    span {
+        color: var(--primary);
+        font-weight: 300px;
+    }
+
+.main 
+    .product-section 
+    .product-list 
+    .product 
+    .hover-details 
+    .price-container 
+    p:nth-child(2) {
+        margin: 0;
+        margin-top: 14px;
+        font-size: 25px;
+        font-weight: 400;
+        color: var(--primary);
+    }
+
+.main 
+    .product-section 
+    .product-list 
+    .product 
+    .hover-details 
+    .image-container {
+        margin: 0 14px;
+        margin-bottom: 20px;
+        display: grid;
+        justify-self: end;
+    }
