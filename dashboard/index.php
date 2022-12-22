@@ -3,20 +3,20 @@
     require("../layouts/header.php");
 ?>
 <div class="main">
-    <div class="nav-main">
-        <div class="logo-container">
-            <img src="../assets/home-logo.png" alt="home logo"/>
-        </div>
-        <ul class="menu-container">
-            <li><a href="">Home</a></li>
-            <li><a href="">Products</a></li>
-            <li><a href="">Contacts</a></li>
-            <li><span></span></li>
-            <li><a href=""> <img src="../assets/home-cart.png" alt="home cart icon" class="imgs" /></a></li>
-            <li><a href=""> <img src="../assets/home-user.png" alt="home user icon" class="imgs"/></a></li>
-        </ul>
-    </div>
     <div class="home-section">
+        <div class="nav-main">
+            <div class="logo-container">
+                <img src="../assets/home-logo.png" alt="home logo"/>
+            </div>
+            <ul class="menu-container">
+                <li><a href="">Home</a></li>
+                <li><a href="">Products</a></li>
+                <li><a href="">Contacts</a></li>
+                <li><span></span></li>
+                <li><a href=""> <img src="../assets/home-cart.png" alt="home cart icon" class="imgs" /></a></li>
+                <li><a href=""> <img src="../assets/home-user.png" alt="home user icon" class="imgs"/></a></li>
+            </ul>
+        </div>
         <div class="hero-main">
             <div class="hero-text-container">
                 <h1 class="store"><span>Global</span> Store</h1>
