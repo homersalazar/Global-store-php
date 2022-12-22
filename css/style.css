@@ -1,6 +1,7 @@
 @import "home.css";
 @import "products.css";
 @import "contact.css";
+@import "navbar.css";
 @import "footer.css";
 :root{
     --primary: #080dfd;
@@ -46,10 +47,9 @@ img{
 
 .main {
     height: 100vh;
-    /* background: #000; */
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, 100vh) 1fr;
+    grid-template-rows: 120px calc(100vh - 120px) repeat(2, 100vh) 1fr;
   }
 
 
